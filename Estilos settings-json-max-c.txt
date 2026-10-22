@@ -1,0 +1,237 @@
+{
+  "color-highlight.markerType": "dot-before",
+  "editor.colorDecorators": false, // Essa e a de cima ("color-highlight.markerType": "dot-before") garante que a extensão color-highlight (que já foi instalada) funcione como esperado
+  "editor.quickSuggestions": {
+    "other": "on",    // Liga sugestões automáticas normais de digitação
+    "comments": "on", // Mostra sugestões até quando você tiver escrevendo comentários
+    "strings": "on"   // Mostra sugestões quando você tiver digitando textos entre aspas
+  },
+  "editor.suggestOnTriggerCharacters": true, // Abre o auto-complete na hora quando você digita caracteres gatilho (tipo tags)
+  "editor.acceptSuggestionOnEnter": "on", // Se apertar Enter, ele já aceita a sugestão de tag recomendada
+  "editor.hover.enabled": false, // Desliga aquela janelinha chata de informação que aparece quando passa o mouse por cima
+  "editor.hover.delay": 5000, // Se ligar o hover acima, ele vai demorar 5 segundos travados pra aparecer na tela
+  "workbench.iconTheme": "vscode-icons", // Ativa o tema de ícones das pastas baseado na extensão que foi instalada
+  "editor.wordWrap": "on", // Quebra as linhas compridas automaticamente pra caber tudo na sua tela sem barra de rolagem
+  "vsicons.presets.jsonOfficial": true, // Força o ícone oficial bonitinho do formato em todos os arquivos .json
+  "files.autoSave": "afterDelay", // Salva seus arquivos sozinho depois de um tempinho sem você digitar nada
+  "editor.fontSize": 14, // Muda o tamanho da letra do seu código
+  "editor.lineHeight": 25, // Ajusta o espaçamento entre as linhas pra não ficar tudo espremido
+  "editor.renderLineHighlight": "all", // Destaca a linha inteirinha onde seu cursor estiver piscando
+  "editor.glyphMargin": false, // Esconde aquela barra lateral esquerda onde bota a bolinha de breakpoint
+  "debug.allowBreakpointsEverywhere": true, // Deixa você botar breakpoint em qualquer arquivo se resolver ligar a barra acima de novo
+  "editor.tabSize": 2, // Configura o botão Tab pra dar exatamente o espaço de 2 barrinhas de espaço
+  "editor.bracketPairColorization.enabled": true, // Pinta cada par de chaves e colchetes de uma cor diferente pra não se perder
+  "editor.guides.bracketPairs": "active", // Liga as linhas guias verticais no bloco de código que você tá mexendo agora
+  "editor.guides.bracketPairsHorizontal": "active", // Liga as linhas guias horizontais pra fechar o desenho dos blocos
+  "editor.guides.highlightActiveBracketPair": true, // Acende no brilho máximo a linha da chave onde o seu cursor tá dentro
+  "editor.minimap.enabled": false, // Desliga aquele mini mapa do código que fica na direita pra ganhar mais espaço na tela
+  "editor.formatOnSave": true, // Alinha e arruma todo o seu código sozinho na hora que você salvar o arquivo
+  "editor.formatOnPaste": true, // Organiza o bloco de código automaticamente logo que você colar ele no arquivo
+  "explorer.compactFolders": false, // Não deixa as subpastas vazias ficarem grudadas em uma linha só na barra lateral
+  "workbench.editor.enablePreview": true, // Abre o arquivo no modo rascunho temporário com só um clique nele
+  "extensions.verifySignature": false, // Pula aquelas travas chatas de assinatura digital na hora de sincronizar extensões
+  "workbench.startupEditor": "none", // Não deixa aquela tela de boas-vindas chata abrir toda vez que você iniciar o VS Code
+  "github.copilot.editor.enableAutoStart": false, // Segura o Copilot pra ele não iniciar sozinho junto com o editor
+  "security.workspace.trust.banner": "never", // Esconde pra sempre aquela barra amarela perguntando si você confia na pasta
+
+  // CORES DO VSCODE (WORKBENCH)
+  "workbench.colorCustomizations": {
+    "editor.background": "#0d1117",      // Cor de fundo do meio, onde você digita o código
+    "sideBar.background": "#02040a",     // Cor de fundo da barra da esquerda onde ficam os arquivos
+    "activityBar.background": "#111016", // Cor de fundo daquela barra fina com os ícones principais na esquerda
+    "activityBar.foreground": "#E1E1E6", // Cor dos ícones quando estão clicados/ativos
+    "activityBar.border": "#0f0f0f",     // Cor da bordinha fina da barra de ícones
+
+    "editorBracketHighlight.foreground1": "#ffd700", // Cor das chaves do 1º nível (Amarelo)
+    "editorBracketHighlight.foreground2": "#da70d6", // Cor das chaves do 2º nível (Rosa/Roxo)
+    "editorBracketHighlight.foreground3": "#17a2b8", // Cor das chaves do 3º nível (Azul)
+
+    "editorBracketPairGuide.activeBackground1": "#ffd700", // Cor da linha guia que tá acesa no 1º nível (Amarelo)
+    "editorBracketPairGuide.activeBackground2": "#da70d6", // Cor da linha guia que tá acesa no 2º nível (Rosa)
+    "editorBracketPairGuide.activeBackground3": "#17a2b8", // Cor da linha guia que tá acesa no 3º nível (Azul)
+
+    // Cores das linhas apagadas das chaves no fundo
+    "editorBracketPairGuide.background1": "#ffd700", 
+    "editorBracketPairGuide.background2": "#da70d6", 
+    "editorBracketPairGuide.background3": "#17a2b8",
+
+    // Faz as linhas verticais de alinhamento brilharem direto, sem apagar
+    "editorWhitespace.indentGuide.background1": "#ffd700FF",
+    "editorWhitespace.indentGuide.background2": "#da70d6FF",
+    "editorWhitespace.indentGuide.background3": "#17a2b8FF",
+    "editorWhitespace.indentGuide.activeBackground1": "#ffd700FF",
+    "editorWhitespace.indentGuide.activeBackground2": "#da70d6FF",
+    "editorWhitespace.indentGuide.activeBackground3": "#17a2b8FF"
+  },
+
+  // CONFIGURAÇÕES DO PRETTIER
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Escolhe o Prettier pra mandar na formatação geral do código
+  "editor.formatOnType": true, // Dá um tapa na formatação enquanto você digita fechamentos de chaves
+  "html.format.enable": true,  // Deixa o formatador nativo mexer nos seus arquivos .html
+
+  "prettier.enable": true,            // Liga o motor de análise do Prettier
+  "prettier.singleQuote": false,      // Obriga a usar aspas duplas em strings de texto
+  "prettier.tabWidth": 2,             // Garante que o espaçamento do Prettier siga os seus 2 espaços do Tab
+  "prettier.semi": false,             // Arranca fora os pontos e vírgulas (;) do final das linhas sozinho
+  "prettier.printWidth": 90,          // Limita a largura máxima da linha do Prettier em 90 caracteres antes de quebrar
+
+  // TERMINAL INTEGRADO E OUTROS AJUSTES
+  "terminal.integrated.fontSize": 16, // Deixa a letra do terminal de comandos maior pra ler melhor
+  "liveServer.settings.port": 5500, // Fixa a porta do Live Server na 5500 pra não ficar mudando
+  "editor.multiCursorModifier": "ctrlCmd", // Deixa você criar vários cursores na tela segurando Ctrl (ou Cmd) e clicando
+  "liveServer.settings.donotShowInfoMsg": true, // Bloqueia aqueles avisos chatos do Live Server subindo na tela toda hora
+  "git.autofetch": true, // Deixa o VS Code puxar updates do Git no fundo sozinho pra você saber se mudou algo
+
+  // CORES DOS TEXTOS DA SINTAXE (TEXTMATE)
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // REGRAS DE CORES PARA CSS
+      {
+        "scope": [
+          "entity.name.tag.css",
+          "entity.name.tag.scss",
+          "entity.name.tag.custom.css"
+        ],
+        "settings": { "foreground": "#f4663b" } // Tags puras do HTML no CSS (tipo main, section) em Laranja-Avermelhado
+      },
+      {
+        "scope": [
+          "entity.other.attribute-name.pseudo-class.css",
+          "entity.other.attribute-name.pseudo-element.css"
+        ],
+        "settings": { "foreground": "#3ef43b" } // Pseudo-classes (tipo :first-of-type, :hover) em Verde Claro
+      },
+      {
+        "scope": [
+          "support.type.property-name.css",
+          "support.type.property-name.scss"
+        ],
+        "settings": { "foreground": "#9cdcfe" } // Nome das propriedades (tipo padding, background) em Azul Claro
+      },
+      {
+        "scope": [
+          "punctuation.separator.key-value.css",
+          "punctuation.separator.key-value.scss"
+        ],
+        "settings": { "foreground": "#da8fd4" } // O símbolo de dois pontos (:) das regras em Rosa/Vinho
+      },
+      {
+        "scope": [
+          "source.css constant.numeric",
+          "source.scss constant.numeric",
+          "constant.numeric.css",
+          "constant.numeric.scss"
+        ],
+        "settings": { "foreground": "#e7e01c" } // Todos os números que aparecem nos arquivos CSS e SCSS em Amarelo
+      },
+      {
+        "scope": [
+          "source.css keyword.other.unit",
+          "source.scss keyword.other.unit",
+          "keyword.other.unit.css",
+          "keyword.other.unit.scss"
+        ],
+        "settings": { "foreground": "#f8ad22" } // As unidades de medida (px, rem, %) em Laranja
+      },
+      {
+        "scope": [
+          "punctuation.terminator.rule.css",
+          "punctuation.terminator.rule.scss"
+        ],
+        "settings": { "foreground": "#d4d4d4" } // O ponto e vírgula (;) do final das linhas de estilo em Cinza Claro
+      },
+      {
+        "scope": "entity.other.attribute-name.class.css",
+        "settings": { "foreground": "#55e213" } // Suas classes personalizadas (.minha-classe) em Verde Limão
+      },
+      {
+        "scope": "support.constant.property-value",
+        "settings": { "foreground": "#e28b68" } // Valores padrões e globais do CSS em Laranja Suave
+      },
+      
+      // REGRAS DE CORES PARA JAVASCRIPT
+      {
+        "scope": "entity.name.function.js",
+        "settings": { "foreground": "#3ef43b" } // Nome das funções que você cria no JS em Verde
+      },
+      {
+        "scope": "storage.type.function.js",
+        "settings": { "foreground": "#3bc3f4" } // Palavras reservadas de escopo (tipo function, const, let) em Ciano
+      },
+      {
+        "scope": "variable.other.constant.object.js",
+        "settings": { "foreground": "#e08bcc" } // Objetos e estruturas que foram criados como constantes em Rosa Claro
+      },
+      {
+        "scope": "entity.name.function.member",
+        "settings": { "foreground": "#d9d976" } // Métodos internos que rodam dentro de objetos em Amarelo Queimado
+      },
+      {
+        "scope": "string.quoted.single.js",
+        "settings": { "foreground": "#e16640" } // Textos que você escreveu usando aspas simples em tom Terracota
+      },
+      {
+        "scope": "support.variable.js",
+        "settings": { "foreground": "#e0f1fc" } // Variáveis do próprio navegador que o JS reconhece em Azul bem Claro
+      },
+      {
+        "scope": "variable.parameter",
+        "settings": { "foreground": "#ae4ce7" } // Parâmetros que entram dentro dos parênteses das funções em Roxo
+      },
+
+      // REGRAS DE CORES PARA HTML
+      {
+        "scope": [
+          "entity.name.tag.html",
+          "entity.name.tag.inline.any.html",
+          "entity.name.tag.block.any.html",
+          "entity.name.tag.structure.any.html",
+          "entity.name.tag.script.html",
+          "punctuation.definition.tag.begin.html",
+          "punctuation.definition.tag.end.html"
+        ],
+        "settings": { "foreground": "#25c8db" } // As tags HTML e aqueles símbolos de menor e maior (< e >) em Azul Turquesa
+      },
+      {
+        "scope": "entity.other.attribute-name.html",
+        "settings": { "foreground": "#0de752" } // Atributos das tags (tipo class, id, href) em Verde bem Vivo
+      },
+      {
+        "scope": [
+          "string.quoted.double.html",
+          "string.quoted.single.html"
+        ],
+        "settings": { "foreground": "#efed74" } // Os valores textuais que ficam dentro das aspas das tags em Amarelo Claro
+      },
+      {
+        "scope": [
+          "text.html.derivative",   // Texto comum que fica solto dentro das tags no HTML
+          "text.html.basic"         // Texto base de arquivos puros de HTML
+        ],
+        "settings": {
+          "foreground": "#ffffffe6" // Cor desse texto solto: branco quase total com 90% de opacidade
+        }
+      },
+      {
+        "scope": [
+          "comment.line.double-slash", // Comentários normais de duas barras (//)
+          "comment.block.html", // Comentários do HTML (<!-- -->)
+          "comment.block.css",  // Comentários do CSS (/* */)
+          "comment.block.scss", // Comentários em bloco do SCSS
+          "comment.line.double-slash.scss", // Duas barras no SCSS
+          "comment.block.js",   // Comentários em bloco no JavaScript
+          "comment.line.double-slash.js",   // Duas barras comuns no JavaScript
+          "punctuation.definition.comment"  // Os caracteres que iniciam os comentários (//, /*, <!--)
+        ],
+        "settings": {
+          "foreground": "#3d67aa", // Deixa todos os comentários em tom Azul Escuro
+          "fontStyle": "italic"    // Deixa as letras dos comentários em itálico
+        }
+      }
+    ]
+  },
+  // Obs.: Caso mude alguma cor, anote para não esquecer a cor anterior ↑
+  // Obs.: 90% destes comentários de descrição foram gerados por IA
+  // Mostra somente a comparação das alterações feitas em um repositório local ligado ao remoto no github ↓
+  "diffEditor.hideUnchangedRegions.enabled": true
+}
