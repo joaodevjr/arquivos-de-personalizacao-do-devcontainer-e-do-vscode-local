@@ -1,11 +1,10 @@
 #!/bin/bash
 
-# Todo este arquivo é um script que cria uma pasta .vscode com um arquivo settings.json e nele está o texto de código com personalizações que sobrepõe a personalização padrão do codespace
 
-# Isso cria a pasta .vscode se ela não existir
 mkdir -p .vscode
-
-# Isso cria a pasta .vscode com o arquivo settings.json com o texto de código que personaliza o codespace
+# ↑ Isso cria a pasta .vscode se ela não existir
+# + Todo este arquivo é um script que cria uma pasta .vscode com um arquivo settings.json e nele está o texto de código com personalizações que sobrepõe a personalização padrão do codespace
+# ↓ Isso cria o arquivo settings.json com o texto de código que personaliza o codespace
 cat << 'EOF' > .vscode/settings.json
 {
   "editor.quickSuggestions": {
