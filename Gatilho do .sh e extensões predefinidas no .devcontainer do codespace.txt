@@ -13,5 +13,5 @@
   },
 
   // Isso executa o arquivo .sh para ser criado o .json de personalziação no codespace e sobrepor sua personalização padrão
-  "postCreateCommand": "bash .devcontainer/script-vsc-sj.sh"
+  "postCreateCommand": "bash .devcontainer/script-personalizacao.sh"
 }
